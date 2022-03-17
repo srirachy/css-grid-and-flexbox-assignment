@@ -11,18 +11,9 @@
   display: flex;
 }
 
-.Home1{
+.Home1, .Search1, .Logout1{
   flex-grow: 1;
 }
-
-.Search1{
-  flex-grow: 1;
-}
-
-.Logout1{
-  flex-grow: 1;
-}
-
 
 /*(2) Your answer goes below here for question #2 please use the border below */
 /* border: 3px solid #1f2546; */
@@ -42,15 +33,7 @@
     display: flex;
   }
 
-  .Home2{
-    flex-grow: 1;
-  }
-  
-  .Search2{
-    flex-grow: 1;
-  }
-  
-  .Login2{
+  .Home2, .Search2, .Login2{
     flex-grow: 1;
   }
 }
@@ -64,38 +47,132 @@
   flex-direction: column-reverse;
 }
 
-
 /*(4) Your answer goes below here for question #4 please use the border below */
 /* border: 3px solid #e33618; */
+.question4{
+  border: 3px solid #e33618;
+  display: flex;
+  flex-direction: column;
+}
+
+.Home4, .Logout4{
+  align-self: flex-end;
+}
+
+.Search4{
+  align-self: center;
+}
+
+.Login4{
+  align-self: flex-start;
+}
 
 
 /*(5) Your answer goes below here for question #5 please use the border below */
 /* border: 3px solid #1f2546; */
+.question5{
+  border: 3px solid #1f2546;
+  display: flex;
+  flex-direction: column;
+}
 
+.Home5, .Logout5{
+  align-self: flex-end;
+}
+
+.Search5, .Login5{
+  align-self: flex-start;
+}
 
 /*(6) Your answer goes below here for question #6 please use the border below */
 /* border: 3px solid #91d2e0 */
 
+.question6{
+  border: 3px solid #91d2e0;
+  display: flex;
+  flex-direction: column;
+}
+
+.Home6, .Logout6{
+  align-self: flex-end;
+}
+
+.Search6{
+  flex-grow: 1;
+}
+
+.Login6{
+  align-self: flex-start;
+}
+
 
 /*(7) Your answer goes below here for question #7 please use the border below */
 /* border: 3px solid #139dc2; */
+.question7{
+  border: 3px solid #139dc2;
+}
 
+.qseven_row{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  grid-template-rows: auto auto auto auto;
+}
+
+/* .qseven_col{
+  
+} */
+
+/* adjust the min/max widths tomorr */
+@media only screen and (min-width: 601px){
+  .qseven_row{
+    grid-column-gap: 150px;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .qseven_row{
+    grid-gap: 0;
+  }
+}
 
 /*(8) Your answer goes below here for question #8 please use the border & background below */
 /* border: 3px solid #7b8ac7; */
 /* background-color: #bad3e2; */
+.question8{
+  border: 3px solid #7b8ac7;
+  background-color: #bad3e2;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
 
 
 /*(9) Your answer goes below here for question #9 please use the border & background below */
 /* border: 3px solid #7b8ac7; */
 /* background-color: #bad3e2; */
+.question9{
+  border: 3px solid #7b8ac7;
+  background-color: #bad3e2;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
 
 
 /*(10) Your answer goes below here for question #10 please use the border & background below */
 /* border: 3px solid #b8f9df; */
 /* background-color: #bad3e2; */
-
+.question10{
+  border: 3px solid #b8f9df;
+  background-color: #bad3e2;
+  display: grid;
+  grid-template-columns: 35% 15% 35% 15%;
+}
 
 /*(11) Your answer goes below here for question #11 please use the border & background below */
 /* border: 3px solid #7f798a; */
 /* background-color: #bad3e2; */
+.question11{
+  /* need to look up how to combine two items into a row or something like that */
+  border: 3px solid #7f798a;
+  background-color: #bad3e2;
+  display: grid;
+}
