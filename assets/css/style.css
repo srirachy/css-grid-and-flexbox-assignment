@@ -110,6 +110,9 @@
 /* border: 3px solid #139dc2; */
 .question7{
   border: 3px solid #139dc2;
+  overflow: hidden;
+  font-size: 0;
+  /* grid-template-columns:  repeat(7, 1fr)*/
 }
 
 .qseven_row{
@@ -118,20 +121,17 @@
   grid-template-rows: auto auto auto auto;
 }
 
-/* .qseven_col{
-  
-} */
-
 /* adjust the min/max widths tomorr */
-@media only screen and (min-width: 601px){
+@media only screen and (min-width: 1024px){
   .qseven_row{
-    grid-column-gap: 150px;
+    grid-column-gap: 7%;
   }
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 1023px){
   .qseven_row{
     grid-gap: 0;
+    margin: 0;
   }
 }
 
@@ -145,7 +145,6 @@
   grid-template-columns: auto auto auto;
 }
 
-
 /*(9) Your answer goes below here for question #9 please use the border & background below */
 /* border: 3px solid #7b8ac7; */
 /* background-color: #bad3e2; */
@@ -155,7 +154,6 @@
   display: grid;
   grid-template-columns: auto auto auto auto;
 }
-
 
 /*(10) Your answer goes below here for question #10 please use the border & background below */
 /* border: 3px solid #b8f9df; */
@@ -171,8 +169,29 @@
 /* border: 3px solid #7f798a; */
 /* background-color: #bad3e2; */
 .question11{
-  /* need to look up how to combine two items into a row or something like that */
   border: 3px solid #7f798a;
   background-color: #bad3e2;
   display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto;
+}
+
+#q11_header{
+  grid-column: 1 / span 1000;
+  grid-row: row;
+}
+
+#q11_aside{
+  grid-column: 1;
+  grid-row: row 2;
+}
+
+#q11_main{
+  grid-column: 2 / span 999;
+  grid-row: row 2;
+}
+
+#q11_footer{
+  grid-column: 1 / span 1000;
+  grid-row: row 3;
 }
