@@ -4,7 +4,6 @@ html, body {
   background-color: #f6dc7d;
   font-family: Arial, Helvetica, sans-serif;
   margin: 10px;
-  /* height: 250% */
 }
 
 body > section {
@@ -47,7 +46,6 @@ p {
 }
 
 /* Question7 has no style */
-
 
 .question9 > div:nth-child(1) {
   background-color: #96ceb4;
@@ -103,7 +101,7 @@ p {
 }
 
 .question11 > main:nth-child(3) {
-  background-color: #3c96d7
+  background-color: #3c96d7;
 }
 
 .question11 > footer:nth-child(4) {
